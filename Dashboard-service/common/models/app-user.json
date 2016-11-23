@@ -1,0 +1,52 @@
+{
+  "name": "appUser",
+  "plural": "appUsers",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "default": " "
+    },
+    "email": {
+      "type": "string",
+      "required": true,
+      "default": " "
+    },
+    "password": {
+      "type": "string",
+      "required": true,
+      "default": " "
+    },
+    "location": {
+      "type": "geopoint",
+      "default": {
+        "lat": 0,
+        "lng": 0
+      }
+    },
+    "keywords": {
+      "type": [
+        "string"
+      ],
+      "default": [
+        "",
+        ""
+      ]
+    },
+    "createdTS": {
+      "type": "date"
+    },
+    "gender": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
